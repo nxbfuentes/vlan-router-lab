@@ -172,3 +172,30 @@ Noel - Beginner Network Enthusiast – learning by doing and documenting to unde
 
 ---
 
+
+🧩 Why Is a Switch Needed in “Router on a Stick”?
+Even though the router can route packets between VLANs, it can’t switch between devices within a VLAN. That’s where the switch comes in.
+🔄 Roles in the Setup
+| Device | Role | 
+| Switch | Connects end devices (PCs, printers, etc.) and separates them into VLANs | 
+| Router | Routes traffic between VLANs — it doesn’t manage intra-VLAN communication | 
+
+
+
+🧠 Analogy: Post Office vs. Apartment Building
+- The switch is like an apartment building: it knows which room (MAC address) each resident is in and delivers mail internally.
+- The router is like the post office: it handles mail going between buildings (i.e., between VLANs).
+So even if the router can receive and send packets, it doesn’t know who’s inside each VLAN — that’s the switch’s job.
+
+🧪 What Happens Without a Switch?
+If you had just a router and multiple devices plugged into it:
+- You’d need multiple physical interfaces on the router — one per VLAN.
+- You’d lose the scalability and segmentation that VLANs and switches offer.
+- You couldn’t easily isolate traffic or apply VLAN-based policies.
+Router-on-a-stick solves this by:
+- Using one physical link (trunk) to carry tagged VLAN traffic.
+- Letting the router handle inter-VLAN routing.
+- Letting the switch handle intra-VLAN switching.
+
+---
+
