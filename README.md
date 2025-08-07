@@ -172,4 +172,3 @@ Noel - Beginner Network Enthusiast – learning by doing and documenting to unde
 
 ---
 
-Let me know if you want me to generate the actual `.pkt` file or help make this README more advanced as you progress!
